@@ -23,9 +23,9 @@ class PlaceViewModel: ViewModel() {
         searchLiveData.value = query
     }
 
-    fun savePlace(place: Place) = PlaceDao.savePlace(place)
+    fun savePlace(place: Place) = Repository.savePlace(place)
 
-    fun getSavePlace() = PlaceDao.getSavePlace()
+    fun getSavePlace() = Repository.getSavePlace()
 
-    fun isPlaceSaved() = PlaceDao.isPlaceSaved()
+    fun isPlaceSaved() = Repository.isPlaceSaved()
 }

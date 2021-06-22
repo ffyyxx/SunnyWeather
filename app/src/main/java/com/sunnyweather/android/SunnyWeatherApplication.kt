@@ -9,7 +9,7 @@ import android.content.Context
  */
 class SunnyWeatherApplication : Application() {
     companion object{
-        const val Token = ""
+        const val TOKEN = "VZy1hYEW2Okxoysm"
         lateinit var context: Context
     }
 

@@ -11,9 +11,9 @@ import retrofit2.http.Path
  * Created by fyx on 2021/6/16
  */
 interface WeatherService {
-    @GET("v2.5/${SunnyWeatherApplication.Token}/{lng},{lat}/realtime.json")
+    @GET("v2.5/${SunnyWeatherApplication.TOKEN}/{lng},{lat}/realtime.json")
     fun getRealtimeWeather(@Path("lng") lng: String, @Path("lat") lat: String): Call<RealtimeResponse>
 
-    @GET("v2.5/${SunnyWeatherApplication.Token}/{lng},{lat}/daily.json")
+    @GET("v2.5/${SunnyWeatherApplication.TOKEN}/{lng},{lat}/daily.json")
     fun getDailyWeather(@Path("lng") lng: String, @Path("lat") lat: String): Call<DailyResponse>
 }
